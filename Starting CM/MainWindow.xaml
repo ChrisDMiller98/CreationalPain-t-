@@ -7,17 +7,36 @@
         mc:Ignorable="d"
         Title="Steve'sWindow" Height="450" Width="800" Background="#FF8B7E7E">
     <Grid>
-        <InkCanvas x:Name="Steve" HorizontalAlignment="Left" Height="342" Margin="92,44,0,0" VerticalAlignment="Top" Width="672" Background="White" RenderTransformOrigin="0.5,0.5" OpacityMask="Red"/>
-        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="0,360,0,0" VerticalAlignment="Top" Width="87" Click="Clear_Click" Height="59"/>
+        <InkCanvas x:Name="Steve" HorizontalAlignment="Left" Height="393" Margin="75,26,0,0" VerticalAlignment="Top" Width="717" Background="White" RenderTransformOrigin="0.5,0.5" OpacityMask="Red">
+            <InkCanvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.033"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </InkCanvas.RenderTransform>
+        </InkCanvas>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="0,360,0,0" VerticalAlignment="Top" Width="75" Click="Clear_Click" Height="59"/>
         <Label x:Name ="PenColor" Content="PenColor" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" Background="White" Width="75"/>
-        <Button x:Name="Red" Content="Red" HorizontalAlignment="Left" Margin="0,26,0,0" VerticalAlignment="Top" Width="75" Background="Red" BorderBrush="Black" OpacityMask="Red" Click="Red_Click"/>
-        <Button x:Name="Blue" Content="Blue" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="75" Background="Blue" BorderBrush="Black" Click="Blue_Click"/>
-        <Button x:Name="Yellow" Content="Yellow" HorizontalAlignment="Left" Margin="0,66,0,0" VerticalAlignment="Top" Width="75" Background="Yellow" BorderBrush="White" Click="Yellow_Click"/>
-        <Button x:Name="Black" Content="Black" HorizontalAlignment="Left" Margin="0,86,0,0" VerticalAlignment="Top" Width="75" Background="Black" Foreground="White" OpacityMask="Black" Click="Black_Click"/>
-        <Label Content="PenSize" HorizontalAlignment="Left" Margin="225,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.053,-0.231" Width="55" Background="White" OpacityMask="#FFF1D1D1"/>
-        <Button x:Name="Small" Content="Small" HorizontalAlignment="Left" Margin="280,0,0,0" VerticalAlignment="Top" Width="75" Click="Small_Click" Height="26"/>
-        <Button x:Name="Medium" Content="Medium" HorizontalAlignment="Left" Margin="355,0,0,0" VerticalAlignment="Top" Width="75" Click="Medium_Click" Height="26"/>
-        <Button x:Name="Large" Content="Large" HorizontalAlignment="Left" Margin="430,0,0,0" VerticalAlignment="Top" Width="75" Click="Large_Click" Height="26"/>
+        <Button x:Name="Red" Content="Red" HorizontalAlignment="Left" Margin="0,86,0,0" VerticalAlignment="Top" Width="75" Background="Red" BorderBrush="Black" OpacityMask="Red" Click="Red_Click"/>
+        <Button x:Name="Blue" Content="Blue" HorizontalAlignment="Left" Margin="0,106,0,0" VerticalAlignment="Top" Width="75" Background="Blue" BorderBrush="Black" Click="Blue_Click"/>
+        <Button x:Name="Yellow" Content="Yellow" HorizontalAlignment="Left" Margin="0,126,0,0" VerticalAlignment="Top" Width="75" Background="Yellow" BorderBrush="White" Click="Yellow_Click"/>
+        <Button x:Name="Black" Content="Black" HorizontalAlignment="Left" Margin="0,66,0,0" VerticalAlignment="Top" Width="75" Background="Black" Foreground="White" OpacityMask="Black" Click="Black_Click"/>
+        <Label Content="PenSize" HorizontalAlignment="Left" Margin="75,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.053,-0.231" Width="55" Background="White" OpacityMask="#FFF1D1D1"/>
+        <Button x:Name="Small" Content="Small" HorizontalAlignment="Left" Margin="130,0,0,0" VerticalAlignment="Top" Width="75" Click="Small_Click" Height="26"/>
+        <Button x:Name="Medium" Content="Medium" HorizontalAlignment="Left" Margin="205,0,0,0" VerticalAlignment="Top" Width="75" Click="Medium_Click" Height="26"/>
+        <Button x:Name="Large" Content="Large" HorizontalAlignment="Left" Margin="280,0,0,0" VerticalAlignment="Top" Width="75" Click="Large_Click" Height="26"/>
+        <Button x:Name="SizeUp" Content="SizeUp" HorizontalAlignment="Left" Margin="568,0,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.054,-0.25" Click="SizeUp_Click" Height="26"/>
+        <Button x:Name="SizeDown" Content="SizeDown" HorizontalAlignment="Left" Margin="642,0,0,0" VerticalAlignment="Top" Width="75" Click="SizeDown_Click" Height="26"/>
+        <Button x:Name="Fill" Content="Fill" HorizontalAlignment="Left" Margin="717,0,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="Fill_Click"/>
+        <Button x:Name="White" Content="White" HorizontalAlignment="Left" Margin="0,26,0,0" VerticalAlignment="Top" Width="75" Background="White" OpacityMask="#FFF1D1D1" Click="White_Click"/>
+        <Button x:Name="Orange" Content="Orange" HorizontalAlignment="Left" Margin="0,166,0,0" VerticalAlignment="Top" Width="75" Background="Orange" OpacityMask="#FFF1D1D1" Click="Orange_Click"/>
+        <Button x:Name="Green" Content="Green" HorizontalAlignment="Left" Margin="0,146,0,0" VerticalAlignment="Top" Width="75" Background="Green" OpacityMask="#FFF1D1D1" Click="Green_Click"/>
+        <Button x:Name="Purple" Content="Purple" HorizontalAlignment="Left" Margin="0,186,0,0" VerticalAlignment="Top" Width="75" Background="Purple" OpacityMask="#FFF1D1D1" Click="Purple_Click"/>
+        <Button x:Name="Pink" Content="Pink" HorizontalAlignment="Left" Margin="0,206,0,0" VerticalAlignment="Top" Width="75" Background="Pink" OpacityMask="#FFF1D1D1" Click="Pink_Click"/>
+        <Button x:Name="Brown" Content="Brown" HorizontalAlignment="Left" Margin="0,226,0,0" VerticalAlignment="Top" Width="75" Background="Brown" OpacityMask="#FFF1D1D1" Click="Brown_Click"/>
+        <Button x:Name="Gray" Content="Gray" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="75" Background="Gray" OpacityMask="#FFF1D1D1" Click="Gray_Click"/>
 
     </Grid>
 </Window>
